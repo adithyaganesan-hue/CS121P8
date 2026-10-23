@@ -144,3 +144,42 @@ print "Grad: "
 print gradDay
 print "Credits: " and cHours
 ```
+### main.cpp
+```
+include i/o, filestream, vector, student, date, address
+```
+#### initializeStudents
+```
+open csv file
+create a vector of Student objects -- create on the heap
+close csv 
+```
+#### main
+```
+create Student vector students
+initializeStudents(students)
+start while
+prompt user for number 0-3
+put input in int input
+switch using input
+0:
+leave while loop
+leave switch
+1:
+print each student's getLastFirst
+leave switch
+2:
+print each student's data
+leave switch
+3:
+prompt user for student last name
+put input into lastName
+for each student
+    check if lastName equals student's getLasName
+        print student's data
+leave switch
+
+delete all students from heap in vector students 
+clear vector students
+return 0
+```
